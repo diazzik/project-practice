@@ -57,20 +57,6 @@ classDiagram
         +sendNotification()
     }
 
-    enum ACMode {
-        COOL
-        HEAT
-        FAN
-        DRY
-        AUTO
-    }
-
-    enum ACState {
-        ON
-        OFF
-        IDLE
-        ERROR
-    }
 
     User "1" *-- "0..*" AirConditioner : Управляет
     User "1" *-- "0..*" Notification : Получает
