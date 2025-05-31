@@ -28,6 +28,23 @@ classDiagram
         +getStatus()
     }
 
+   class ACMode {
+        <<enumeration>>
+        COOL
+        HEAT
+        FAN
+        DRY
+        AUTO
+    }
+
+    class ACState {
+        <<enumeration>>
+        ON
+        OFF
+        IDLE
+        ERROR
+    }
+
     class Notification {
         +String notificationId
         +String message
